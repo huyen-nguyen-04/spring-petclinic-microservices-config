@@ -27,4 +27,4 @@ eureka:
 management:
   zipkin:
     tracing:
-      endpoint: http://zipkin.observability.svc.cluster.local:9411/api/v2/spans
+      endpoint: http://zipkin.local/api/v2/spans
