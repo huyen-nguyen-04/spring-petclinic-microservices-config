@@ -22,3 +22,7 @@ management:
   zipkin:
     tracing:
       endpoint: http://zipkin.local/api/v2/spans
+logging:
+  pattern:
+    correlation: "[${spring.application.name:},%X{traceId:-},%X{spanId:-}] "
+  include-application-name: false
